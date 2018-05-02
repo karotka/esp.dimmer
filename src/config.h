@@ -7,8 +7,8 @@ byte POT_ADDRESS = 0x11;
 class Config_t {
 
 public:
-    char* ssid = "KWIFI";
-    char* password = "tajneheslo";
+    String ssid = "KWIFI";
+    String password = "tajneheslo";
     IPAddress ip;
     IPAddress gateway;
     IPAddress subnet;
@@ -17,8 +17,7 @@ public:
         ip(172, 16, 1, 1),
         gateway(172, 16, 0, 1),
         subnet(255, 255, 0, 0) {
-
-            //load();
+        //load();
     }
 
     void load() {
